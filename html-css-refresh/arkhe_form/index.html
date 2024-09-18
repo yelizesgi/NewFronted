@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@500&family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Arkhe Başvuru Form</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1 id="title">Arkhe <span>Aile Danuşmanlık Merkezi</span></h1>
+            <h3 id="description">"Ailenize değer veriyoruz"</h3>
+        </header>
+        <section class="form">
+          <form action="results.html">
+            <div class="input-box">
+              <label for="name">Ad-Soyad</label> <br>
+              <input type="text" id="name" name="name" placeholder="Bu alanı doldurmak zorunludur">
+             </div>
+             <div class="input-box">
+              <label for="email">Email</label> <br>
+              <input type="email" name="email" id="email" placeholder="Bu alanı doldurmak zorunludur">
+             </div>
+             <div class="input-box">
+               <label for="age">Yaşınız</label> <br>
+               <input type="number" name="age" id="age" placeholder="Yasınız">
+             </div>
+             <div class="input-box">
+               <label for="">Danışmanlık Tercihiniz:</label>
+               <select name="tercih" id="dropdown">
+                   <option value="bireysel">Bireysel</option>
+                   <option value="aile" selected>Aile</option>
+               </select>
+             </div>
+             <div class="input-box" id="radio">
+               <label for="">Cinsiyet:</label> <br>
+               <input type="radio" name="cinsiyet" id="first-radio">
+               <label for="first-radio">Bay</label>  
+               <input type="radio" name="cinsiyet" id="second-radio">
+               <label for="second-radio">Bayan</label>
+               <input type="radio" name="cinsiyet" id="third-radio">
+               <label for="third-radio">Other</label>
+             </div>
+             <div class="input-box" id="checkbox">
+               <label for="">Günler</label> <br>
+               <input type="checkbox" name="gun1" id="first-check">
+               <label for="first-check">Pazartesi</label>
+               <input type="checkbox" name="gun2" id="second-check">
+               <label for="second-check">Salı</label>
+               <input type="checkbox" name="gun3" id="third-check">
+               <label for="third-check">Çarşamba</label>
+               <input type="checkbox" name="gun3" id="fourth-check">
+               <label for="fourth-check">Perşembe</label>
+               <input type="checkbox" name="gun1" id="fifth-check">
+               <label for="fifth-check">Cuma</label>
+             </div>
+             <div class="input-box">
+               <label for="not">Not:</label> <br>
+               <textarea name="not" id="note" cols="30" rows="10" placeholder="Not Giriniz"></textarea>
+             </div>
+             <div class="form-submit">
+               <button id="form-button">Send</button>
+             </div>
+          </form>
+        </section>
+    </div>
+</body>
+</html>
