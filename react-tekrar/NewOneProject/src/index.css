@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgba(208, 173, 130, 0.815); */
+}
+
+/* h1{
+  margin-top: 8rem;
+  background-color: rgba(117, 63, 167, 0.644);
+  padding: 5rem;
+  border-radius: 50%;
+  font-size: 90px;
+} */
+
+h1{
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(144, 30, 30, 0.644);
+  background-color: rgba(222, 184, 135, 0.538);
+  border-radius: 2rem;
+}
+
+.dress-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.dress-card img{
+    width: 20rem;
+    display: inline;
+    
+}
+
+@media (max-width: 800px) {
+  .dress-card {
+    flex-direction: row-reverse;
+  }
+}
