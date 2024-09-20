@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: cadetblue;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+h1{
+    text-align: center;
+    margin: 20rem 20rem;
+    font-weight:bolder;
+    font-size:bolder;
+    border: 0.3rem solid wheat ;
+    background-color: beige;
+    width: 60%;
+    border-radius: 20px;
+}
