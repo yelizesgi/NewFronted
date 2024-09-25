@@ -1,10 +1,12 @@
+import WomenDress from "./components/WomenDress";
 
 
 
 function App() {
   return (
     <div className="App">
-      <h1>React Starter</h1>
+      <h1>Women Dress Catalog</h1>
+      <WomenDress/>
     </div>
   );
 }
