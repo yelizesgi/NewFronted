@@ -52,11 +52,17 @@
     background-color: #4a594f42;
   }
 
+  a:hover{
+    color: #1B7F7A;
+    background-color: #4c4a5929;
+    box-shadow: 5px 5px #1B7F7A;
+  }
+
   .section-container{
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: #f8d6b9;
+   background-color: #f8d7b995;
    gap: 2rem;
    
   }
