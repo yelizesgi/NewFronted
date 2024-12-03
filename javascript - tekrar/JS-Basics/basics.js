@@ -5,7 +5,7 @@
 // Yaşı 18 veya daha küçükse "Giriş yapamazsınız" yazdırın.
 // const age = 20;
 // const isVIP = true;
-console.log("********JS Basic Refresh*******")
+console.log("********JS Basic Refresh*******");
 //? const age= +prompt("Lutfen yasınızı giriniz");
 //? const vip = prompt("Vıp üyesi misiniz E/H");
 //? if(age >= 18 && vip === "E"){
@@ -17,15 +17,11 @@ console.log("********JS Basic Refresh*******")
 //?     console.log(`Yaşiniz: ${age}, Giriş yapamazsınız...`)
 //? }
 
-
-
-
 //* 3- Hava durumuna göre kıyafet önerisi veren bir if-else yapısı yazın.
-//* Hava durumu "güneşli" ise "T-shirt giyin", "yağmurlu" ise "Şemsiye alın", "karlı" ise "Mont giyin" yazdırın. 
+//* Hava durumu "güneşli" ise "T-shirt giyin", "yağmurlu" ise "Şemsiye alın", "karlı" ise "Mont giyin" yazdırın.
 //* Diğer durumlar için "Hava durumunu kontrol edin" yazdırın.
 //* const weather = "yağmurlu"; // Bu değeri farklı hava durumlarıyla değiştirerek test edin.
 //* const weather = "yağmurlu";
-
 
 //? const degree = prompt("Lütfen hava sıcaklığını giriniz")
 //? if(degree > 22){
@@ -35,10 +31,6 @@ console.log("********JS Basic Refresh*******")
 //? }else{
 //?     console.log(`Girdiğiniz sıcaklık: ${degree}, Hava karlı, Mont giyin`)
 //? }
-
-
-
-
 
 //*4- Kullanıcı adı ve şifreye göre giriş kontrolü yapan bir if-else yapısı yazın.
 //* Kullanıcı adı "admin" ve şifre "1234" ise "Giriş başarılı", değilse "Giriş başarısız" yazdırın.
@@ -52,9 +44,6 @@ console.log("********JS Basic Refresh*******")
 //? }else{
 //?     console.log(`UserName: ${username}, Şifre eşleştirmesi gerçekleşmedi giriş başarisiz`)
 //? }
-
-
-
 
 // //***************SORU1*******************
 //*5- Kullanıcınan alınan notu
@@ -78,10 +67,8 @@ console.log("********JS Basic Refresh*******")
 //?     console.log(`Girdiğiniz Not: ${note}, harf notunuz AA`)
 //? }
 
-
 // //***************SORU2*******************
 //* Kullanıcıdan alınan 3 sayıyından en büyüğünü gösteren bir if koşulunu yazınız
-
 
 //? const num1= +prompt("Please enter the first number")
 //? const num2= +prompt("Please enter the second number")
@@ -98,26 +85,23 @@ console.log("********JS Basic Refresh*******")
 // //***************SORU*******************
 //* Kullanıcıdan alınan 3 sayıyı büyükten küçüğe sıralayan bir if koşulunu yazınız
 
-//  const say1= +prompt("Please enter the first number")
-//  const say2= +prompt("Please enter the second number")
-//  const say3= +prompt("Please enter the third number")
+//?  const say1= +prompt("Please enter the first number")
+//?  const say2= +prompt("Please enter the second number")
+//?  const say3= +prompt("Please enter the third number")
 
-// if(say1>say2 && say1>say3 && say2>say3){
-//     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say1}>${say2}>${say3} `)
-// }else if(say1>say2 && say1>say3 && say3>say2){
-//     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say1}>${say3}>${say2} `)
-// }else if(say2>say1 && say2>say3 && say1>say3){
-//     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say2}>${say1}>${say3} `)
-// }else if(say2>say1 && say2>say3 && say3>say1){
-//     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say2}>${say3}>${say1} `)
-// }else if(say3>say1 && say3>say2 && say1>say2){
-//     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say3}>${say1}>${say2} `)
-// }else{
-//     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say3}>${say2}>${say1} `)
-// }
-
-
-
+//? if(say1>say2 && say1>say3 && say2>say3){
+//?     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say1}>${say2}>${say3} `)
+//? }else if(say1>say2 && say1>say3 && say3>say2){
+//?     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say1}>${say3}>${say2} `)
+//? }else if(say2>say1 && say2>say3 && say1>say3){
+//?     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say2}>${say1}>${say3} `)
+//? }else if(say2>say1 && say2>say3 && say3>say1){
+//?     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say2}>${say3}>${say1} `)
+//? }else if(say3>say1 && say3>say2 && say1>say2){
+//?     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say3}>${say1}>${say2} `)
+//? }else{
+//?     console.log(`Girilen sayilar: ${say1}, ${say2}, ${say3}, siralama : ${say3}>${say2}>${say1} `)
+//? }
 
 // // ----------------SORU2-------------------//
 
@@ -217,10 +201,9 @@ console.log("********JS Basic Refresh*******")
 
 // ----------------SORU4-------------------//
 
-// let input = +prompt("Please enter a number to see the number is even or odd.");
-// let result = input % 2 == 0 ? "even" : "odd";
-// console.log(result);
-
+// ?let input = +prompt("Please enter a number to see the number is even or odd.");
+//? let result = input % 2 == 0 ? "even" : "odd";
+//? console.log(result);
 //----------------SORU5-------------------//
 
 // let process = prompt(
@@ -248,32 +231,20 @@ console.log("********JS Basic Refresh*******")
 //   alert("invalid input please try again");
 // }
 
-
-
 //**! Ternary */
 
-
-// Bir çalışanın performans puanına göre bonus hesaplayan bir ternary ifadesi yazın. 
+// Bir çalışanın performans puanına göre bonus hesaplayan bir ternary ifadesi yazın.
 // Performans puanı 90 ve üzeri ise bonus %20, 80-89 arası ise %10, 70-79 arası ise %5, 70'in altı ise bonus yok.
 // Çalışanın maaşı 1000 birim olsun.
 // const performanceScore = 85; // Bu değeri değiştirerek test edin.
 // const salary = 1000;
 
-
-
-
-
-
+//? const performans = +prompt("Please enter the performans point");
+//? const salary = +prompt("Please enter salary");
+//? const bonus = performans >= 90 ? salary * 0.2 : salary * 0.1;
+//? console.log(salary + bonus);
 
 // Program 0-100 arasında rasgele bir sayi tutacak ve kullanicinin bu sayiyi 5 kere(hak) de bilmesini isteyecektir. Her yanlista hakkini bir dusurecek ve ARTTIR/AZALT diyerek kullaniciyi yonlendirecektir.Sonuc olarak kullanicinin hakki 0 olursa "Uzgunuz kaybettiniz" eger bildi ise "Tebrikler ... denemede bildiniz" yazacaktir.
-
-
-
-
-
-
-
-
 
 // //TODO:
 // //*-------------------------------------------------------
@@ -288,19 +259,13 @@ console.log("********JS Basic Refresh*******")
 // //! ogrenciAra("ahmet")  ===> "Ahmet 2 adet bulundu"
 // //! ogrenciAra("canan")  ===> "Canan bulunamadı"
 
-
-
-
-
-
-
-// //!Size bir  cümle verildi. "Clarusway" kelimesini bulmanız istendi. Ve eğer bulursanız şuna benzer bir cümle döndürmeniz gerekir: 
+// //!Size bir  cümle verildi. "Clarusway" kelimesini bulmanız istendi. Ve eğer bulursanız şuna benzer bir cümle döndürmeniz gerekir:
 // //? findClarusway("I am finding Clarusway !") ➞ "I found Clarusway at 4!"
 
 // //? Clarusway'i bulamıyorsanız,
 // // findClarusway("I am not finding!") ➞ "I can't find Clarusway :(" yazın.
 
-// test: "I like Clarusway"  // Output : I found at Clarusway at 3!; 
+// test: "I like Clarusway"  // Output : I found at Clarusway at 3!;
 // test : "I like bootcamps " // Output  I can't find Clarusway :(;
 
 // function findClarusway(sentence){
