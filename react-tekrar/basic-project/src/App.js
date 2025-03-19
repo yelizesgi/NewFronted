@@ -1,9 +1,10 @@
 import "./App.css";
+import ImageGalery from "./components/ImageGalery";
 
 function App() {
   return (
     <div className="App">
-      <h1>React Basic Project </h1>
+      <ImageGalery/>
     </div>
   );
 }
