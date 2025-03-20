@@ -32,8 +32,14 @@ export const data=[
     {
         id: 6,
         categories: "Nilüfer",
-        color: "Pinter",
+        color: "Pink",
         img_url:"https://cdn.pixabay.com/photo/2018/06/16/15/36/water-lily-3478924_640.jpg"
+    },
+    {
+        id: 7,
+        categories: "Nilüfer",
+        color: "Red",
+        img_url:"https://cdn.pixabay.com/photo/2021/07/11/14/18/water-lily-6403860_640.jpg"
     },
     {
         id: 8,
