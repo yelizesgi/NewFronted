@@ -2,24 +2,26 @@
 
 //* 1. reduce() kullanarak nesne dizisinde kaç kişinin belirli bir
 //* yaşın üzerinde olduğunu sayın.
-const people = [
+ const people = [
 { id: 1, name: "Ali", age: 25 },
 { id: 2, name: "Ayşe", age: 30 },
 { id: 3, name: "Mehmet", age: 20 },
 { id: 4, name: "Zeynep", age: 40 }
 ];
 
-const bigage= people.reduce((small,big)=> {
-    if(big.age > 25){
-        if(!small[big.age]){
-            small[big.age] = [];
-        }
-        small[big.age].push(big)
-    }
-    return small;
-},{} );
-console.log(bigage)
-// const newarray = people.map(i =>{
+// ?const bigage= people.reduce((small,big)=> {
+//     if(big.age > 25){
+//         if(!small[big.age]){
+//             small[big.age] = [];
+//         }
+//         small[big.age].push(big)
+//     }
+//     return small;
+// },{} );
+// console.log(bigage)
+
+
+// ?const newarray = people.map(i =>{
 //     if(i.age>=25){
 //         console.log(i.name)
 //     }
@@ -27,6 +29,7 @@ console.log(bigage)
 
 
 //* Örneğin, 25 yaşından büyük olanları sayın.
+
 
 //* 2. map() ve reduce() kullanarak nesne dizisini id 'ye göre bir
 //* nesneye çevirin.
