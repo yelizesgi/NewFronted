@@ -9,7 +9,8 @@
 { id: 4, name: "Zeynep", age: 40 }
 ];
 
-// ?const bigage= people.reduce((small,big)=> {
+//* Örneğin, 25 yaşından büyük olanları sayın.
+// ? const bigage= people.reduce((small,big)=> {
 //     if(big.age > 25){
 //         if(!small[big.age]){
 //             small[big.age] = [];
@@ -27,10 +28,6 @@
 //     }
 // })
 
-
-//* Örneğin, 25 yaşından büyük olanları sayın.
-
-
 //* 2. map() ve reduce() kullanarak nesne dizisini id 'ye göre bir
 //* nesneye çevirin.
 // const people = [
@@ -38,6 +35,14 @@
 // { id: 2, name: "Ayşe" }
 // ];
 //? Beklenen çıktı: { 1: "Ali", 2: "Ayşe" }
+
+//!  Bu çiftleri bir nesne haline getirelim
+//? Object.fromEntries(), [anahtar, değer] çiftlerinden bir nesne (object) oluşturur
+
+// const Idname = people.sort((a,b)=> a.id - b.id)
+// const result = Object.fromEntries(Idname.map(i => [i.id, i.name]))
+
+// console.log(result)
 
 //* 3. filter() ve reduce() ile belirli bir yaş aralığındaki kişilerin
 //* toplam yaşını bulun.
