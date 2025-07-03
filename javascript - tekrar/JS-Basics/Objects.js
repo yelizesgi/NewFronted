@@ -3,10 +3,10 @@
 //* 1. reduce() kullanarak nesne dizisinde kaç kişinin belirli bir
 //* yaşın üzerinde olduğunu sayın.
  const people = [
-{ id: 1, name: "Ali", age: 25 },
+{ id: 4, name: "Zeynep", age: 40 },
 { id: 2, name: "Ayşe", age: 30 },
-{ id: 3, name: "Mehmet", age: 20 },
-{ id: 4, name: "Zeynep", age: 40 }
+{ id: 1, name: "Ali", age: 25 },
+{ id: 3, name: "Mehmet", age: 20 }
 ];
 
 //* Örneğin, 25 yaşından büyük olanları sayın.
@@ -37,12 +37,19 @@
 //? Beklenen çıktı: { 1: "Ali", 2: "Ayşe" }
 
 //!  Bu çiftleri bir nesne haline getirelim
-//? Object.fromEntries(), [anahtar, değer] çiftlerinden bir nesne (object) oluşturur
+//? Object.fromEntries(), [anahtar, değer] çiftlerinden bir nesne (object) oluşturur map()
 
 // const Idname = people.sort((a,b)=> a.id - b.id)
 // const result = Object.fromEntries(Idname.map(i => [i.id, i.name]))
 
 // console.log(result)
+
+//! reduce()
+// const result2 = people.reduce((acc, person)=> {
+//     acc[person.id] = person.name;
+//     return acc;
+// }, {});
+// console.log(result2)
 
 //* 3. filter() ve reduce() ile belirli bir yaş aralığındaki kişilerin
 //* toplam yaşını bulun.
@@ -52,9 +59,15 @@
 // { id: 3, name: "Mehmet", age: 20 },
 // { id: 4, name: "Zeynep", age: 40 }
 // ];
-
+// const totalAge = people.filter(person=> person.age >= 25)
+// .reduce((total,person) => total + person.age, 0);
+// console.log("Total age:", totalAge);
 
 //* Örneğin, 20 ile 35 yaş arasındaki kişilerin toplam yaşını hesaplayın.
+// const youngAge= people.filter(person=> person.age > 20 & person.age < 35)
+// .reduce((total,person) => total + person.age, 0);
+// console.log("Young Age Total:", youngAge);
+
 //* 4. map() kullanarak isimleri ters çevirin.
 // const names = ["Ali", "Ayşe", "Mehmet", "Zeynep"];
 //? Beklenen çıktı: ["ilA", "eşyA", "temheM", "penyeZ"]
