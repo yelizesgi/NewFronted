@@ -2,12 +2,12 @@
 
 //* 1. reduce() kullanarak nesne dizisinde kaç kişinin belirli bir
 //* yaşın üzerinde olduğunu sayın.
- const people = [
-{ id: 4, name: "Zeynep", age: 40 },
-{ id: 2, name: "Ayşe", age: 30 },
-{ id: 1, name: "Ali", age: 25 },
-{ id: 3, name: "Mehmet", age: 20 }
-];
+//  const people = [
+// { id: 4, name: "Zeynep", age: 40 },
+// { id: 2, name: "Ayşe", age: 30 },
+// { id: 1, name: "Ali", age: 25 },
+// { id: 3, name: "Mehmet", age: 20 }
+// ];
 
 //* Örneğin, 25 yaşından büyük olanları sayın.
 // ? const bigage= people.reduce((small,big)=> {
@@ -72,10 +72,32 @@
 // const names = ["Ali", "Ayşe", "Mehmet", "Zeynep"];
 //? Beklenen çıktı: ["ilA", "eşyA", "temheM", "penyeZ"]
 
+
+  //! isim string'ini tersine çevirmek için 3 adım kullanılır:
+  //! 1. split("") : string'i harflerine ayırıp bir dizi yapar ("Ali" → ["A", "l", "i"])
+  //! 2. reverse() : diziyi tersine çevirir (["A", "l", "i"] → ["i", "l", "A"])
+  //! 3. join("") : ters dizi elemanlarını birleştirip yeniden string yapar (["i", "l", "A"] → "ilA")
+//? const reverseName = people.map(i => (i.name.split("").reverse().join("")));
+//? console.log(reverseName);
+
 //* 5. reduce() kullanarak dizide tekrar eden elemanların sayısını
 //* içeren bir nesne oluşturun.
 // const items = ["elma", "armut", "elma", "çilek", "armut", "muz", "elma"];
 //? Beklenen çıktı: { elma: 3, armut: 2, çilek: 1, muz: 1 }
+
+// 
+//! acc → Biriktirici nesne (örneğin: { elma: 3, armut: 2, muz: 1 })
+
+//! meyve → Dizideki her bir eleman
+
+//! (acc[meyve] || 0) + 1 → Eğer o meyve daha önce hiç eklenmemişse undefined olur ve 0 kabul edilir, sonra 1 eklenir.
+// 
+
+//? const repeatJuice= items.reduce((acc, juice) => {
+//?     acc[juice] = (acc[juice] || 0) + 1;
+//?     return acc;
+//? },{});
+//? console.log(repeatJuice)
 
 //* 6. map() kullanarak nesne dizisini yeni bir formata dönüştürün.
 // const people = [
