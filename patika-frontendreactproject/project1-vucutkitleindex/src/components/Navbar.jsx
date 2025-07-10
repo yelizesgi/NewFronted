@@ -5,7 +5,8 @@ const Navbar = () => {
 
     return(
         <>
-        <h1>Navbar</h1>
+        <h1>Ready? Let's Start</h1>
+        <button>NEXT</button>
         </>
     )
 }
