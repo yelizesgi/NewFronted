@@ -1,16 +1,58 @@
                                 // *---------Array İterations----------*//
 
                                            //?----Basic------// 
-// 1. Bir dizideki pozitif sayıların karesini alıp, sonucu 50'den büyük olanları
-// döndüren bir fonksiyon yazın.
-// 2. Bir dizideki tüm sayıların çarpımını hesaplayan bir fonksiyon yazın.
-// 3. Bir dizideki ilk negatif sayının indeksini döndüren bir fonksiyon yazın.
-// 4. Bir dizideki kelimelerin hepsini büyük harfe çeviren bir fonksiyon yazın.
-// 5. Bir dizide ilk 50'den büyük sayıyı bulan bir fonksiyon yazın.
-// 6. Bir dizideki sayıların karesini alıp, sonucu 100'den küçük olanları döndüren
-// bir fonksiyon yazın.
+const exerArr = [-1, -2, -3, 0,1,2,3,4,5,6,7,8,9,10,12,14, 50, 55, 60, 70]
+
+
+
+//? 1. Bir dizideki pozitif sayıların karesini alıp, sonucu 50'den büyük olanları 
+//! filter(), map()
+//* döndüren bir fonksiyon yazın.
+//* const q1 = exerArr
+//* .filter((i) => i > 0)
+//* .map((i) => i**2)
+//* .filter((i) => i > 50);
+//* console.log(q1);
+
+
+//? 2. Bir dizideki tüm sayıların çarpımını hesaplayan bir fonksiyon yazın.
+//! reduce(a,b) single result
+
+//* const q2 = exerArr.reduce((i, x) => i * x);
+//* console.log(q2);
+
+//? 3. Bir dizideki ilk negatif sayının indeksini döndüren bir fonksiyon yazın.
+
+//* const q3 = exerArr.findIndex((i) => i <0)
+//* console.log(q3);
+
+const exerstr = ['Yeliz', 'Murat', 'Mehmet Efe', 'Melek']
+
+//? 4. Bir dizideki kelimelerin hepsini büyük harfe çeviren bir fonksiyon yazın.
+
+//* const q4 = exerstr.map((i) => i.toUpperCase());
+//* console.log(q4);
+
+
+//? 5. Bir dizide ilk 50'den büyük sayıyı bulan bir fonksiyon yazın.
+//! find()
+
+//* const q5 = exerArr.find((i) => i > 50);
+//* console.log(q5);
+
+//? 6. Bir dizideki sayıların karesini alıp, sonucu 100'den küçük olanları döndüren
+//? bir fonksiyon yazın.
+
+//* const q6 = exerArr.map((i) => i*i).filter((i) => i < 100);
+//* console.log(q6);
+
+
+
 // 7. Bir dizide tüm elemanların çift sayı olup olmadığını kontrol eden bir
 // fonksiyon yazın.
+
+
+
 // 8. Bir diziyi tersten oluşturmak için bir fonksiyon yazın.
 // 9. Bir dizide en az bir elemanın 10'un katı olup olmadığını kontrol eden bir
 // fonksiyon yazın.
